@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="LongestLine <= 573.6\nsquared_error = 0.8\nsamples = 316\nvalue = 3.3"] ;
+1 [label="RectOrth2 <= 0.3\nsquared_error = 0.5\nsamples = 162\nvalue = 3.7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AvgRectArea <= 163011.0\nsquared_error = 0.6\nsamples = 62\nvalue = 3.3"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.4\nsamples = 61\nvalue = 3.4"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.0\nsamples = 1\nvalue = 1.0"] ;
+2 -> 4 ;
+5 [label="RectCoverage <= 0.1\nsquared_error = 0.4\nsamples = 100\nvalue = 4.0"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.0\nsamples = 2\nvalue = 5.0"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.3\nsamples = 98\nvalue = 3.9"] ;
+5 -> 7 ;
+8 [label="AvgCrossingAngle <= 87.0\nsquared_error = 0.7\nsamples = 154\nvalue = 2.8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="RectOrth <= 0.0\nsquared_error = 0.7\nsamples = 55\nvalue = 2.3"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.4\nsamples = 34\nvalue = 1.9"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.5\nsamples = 21\nvalue = 2.9"] ;
+9 -> 11 ;
+12 [label="AvgLineAngle <= 7.9\nsquared_error = 0.4\nsamples = 99\nvalue = 3.1"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.4\nsamples = 90\nvalue = 3.2"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.3\nsamples = 9\nvalue = 2.3"] ;
+12 -> 14 ;
+}
